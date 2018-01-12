@@ -1,5 +1,5 @@
 class PostsController < OpenReadController
-  before_action :set_post, only: %i[update destroy show]
+  before_action :set_post, only: %i[update destroy]
 
   # GET /posts
   def index
