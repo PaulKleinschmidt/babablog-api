@@ -1,7 +1,9 @@
 class CommentSerializer < ActiveModel::Serializer
-  attributes :id, :text, :post
-  # belongs_to :post
-  # belongs_to :user
+  attributes :id, :text, :post, :user_id, :editable
+
+  def editable
+    scope == object.user
+  end
 
   def post
     object.post.id
