@@ -1,5 +1,5 @@
 class PostSerializer < ActiveModel::Serializer
-  attributes :id, :title, :content, :user_id, :editable, :comments, :like_id, :likes
+  attributes :id, :title, :content, :user_id, :editable, :comments, :likes
   def editable
     scope == object.user
   end
@@ -10,5 +10,6 @@ class PostSerializer < ActiveModel::Serializer
 
   def likes
     object.likes.pluck(:id)
+    # object.likes.pluck(:user)
   end
 end

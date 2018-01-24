@@ -1,13 +1,19 @@
 class LikeSerializer < ActiveModel::Serializer
-  attributes :id
-  has_one :user
-  has_one :post
+  attributes :id, :editable, :post, :user
 
   # def post
   #   object.post.id
   # end
 
+  def editable
+    scope == object.user
+  end
+
   def user
     object.user.id
+  end
+
+  def post
+    object.post.id
   end
 end
