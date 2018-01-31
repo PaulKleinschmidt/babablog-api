@@ -12,4 +12,6 @@ class PostSerializer < ActiveModel::Serializer
     object.likes.pluck(:id)
     # object.likes.pluck(:user)
   end
+
+
 end
