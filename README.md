@@ -22,9 +22,6 @@ All resources have full CRUD functionality
 | PATCH  | `/comments/`           | `comments#index`  |
 
 
-## How Its Made
-
-babaBlog is my first project using Ember.js. I started by building the api on rails. After adding a new resource, I set up the components and routes needed on the front end. I followed the data down, action up process to make my changes on the front end persist to the database. I divided my views up into components as much as possible. After completing the first resource, I added the comments resource so that users could comment on posts.
 
 ## Whats Next?
 
