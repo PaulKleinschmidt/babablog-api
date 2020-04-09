@@ -25,7 +25,7 @@ All resources have full CRUD functionality
 
 ## Whats Next?
 
-I have been working on a likes resource that I hope to have done in the future. I have added a likes table in my SQL database. Next step is diplpaying the view in my Ember client. Additionally, I would like users to be able to like posts and comments. I would also like to have a way of sorting posts
+I have been working on a likes resource that I hope to have done in the future. I have added a likes table in my SQL database. The next step is dislpaying the view in my Ember client. Additionally, I would like users to be able to like posts and comments. I would also like to implement a way of sorting posts.
 
 ## User Stories
 
